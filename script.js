@@ -31,14 +31,13 @@ var moviesElements = movies.map(function(movie) {
         width: '300px',
         height: '445px'
       })
-    );
+    )
   );
 });
 
-var element =
-  React.createElement('div', {},
-    React.createElement('h1', {}, 'Lista filmów'),
-    React.createElement('ul', {}, moviesElements)
-  );
+var element = React.createElement('div', {},
+  React.createElement('h1', {}, 'Lista filmów'),
+  React.createElement('ul', {}, moviesElements)
+);
 
 ReactDOM.render(element, document.getElementById('app'));
